@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Open+Sans:300,400,600,700,800,900&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+    <!-- Business Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="demos/business/business.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="demos/business/css/fonts.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="demos/course/css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="demos/course/course.css" type="text/css" />
+
+    <link rel="stylesheet" href="one-page/onepage.css" type="text/css" />
+    <link rel="stylesheet" href="demos/seo/css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="demos/seo/seo.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="demos/real-estate/css/font-icons.css"
+      type="text/css"
+    />
+
+    <!-- / -->
+
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Here goes your colors.css
+    ============================================= -->
+    <link rel="stylesheet" href="css/colors.css" type="text/css" />
+    <!-- Range Slider CSS -->
+    <link
+      rel="stylesheet"
+      href="css/components/ion.rangeslider.css"
+      type="text/css"
+    />
+
+    <!-- Theme Color
+	============================================= -->
+    <link rel="stylesheet" href="css/colors.php?color=00BED7" type="text/css" />
+    <!-- Document Title
+	============================================= -->
+    <link rel="icon" type="image/x-icon" href="/images/adonis-favicon.png" />
+    <title>Adonis Tourism LLC | You Travel, We Care</title>
+    <style>
+      .form-group > label.error {
+        display: block !important;
+        text-transform: none;
+      }
+
+      .form-group input.valid ~ label.error,
+      .form-group input[type="text"] ~ label.error,
+      .form-group input[type="email"] ~ label.error,
+      .form-group input[type="number"] ~ label.error,
+      .form-group select ~ label.error,
+      .form-group textarea ~ label.error {
+        display: none !important;
+      }
+    </style>
+  </head>
+
+  <body class="stretched block-form-2">
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+      <!-- Header
+		============================================= -->
+      <header
+        id="header"
+        class="full-header dark header-size-md"
+        data-sticky-class="not-dark"
+        data-responsive-class="not-dark"
+        data-sticky-offset="full"
+        data-sticky-offset-negative="80"
+      >
+        <div id="header-wrap">
+          <div class="container">
+            <div class="header-row">
+              <!-- Logo
+						============================================= -->
+              <div id="logo">
+                <!-- <a
+                  href="index.html"
+                  class="standard-logo"
+                  data-dark-logo="demos/business/images/logo-dark.png"
+                  ><img src="demos/business/images/logo.png" alt="Canvas Logo"
+                /></a>
+                <a
+                  href="index.html"
+                  class="retina-logo"
+                  data-dark-logo="demos/business/images/logo-dark@2x.png"
+                  ><img
+                    src="demos/business/images/logo@2x.png"
+                    alt="Canvas Logo"
+                /></a> -->
+              </div>
+              <!-- #logo end -->
+
+              <div class="header-misc">
+                <!-- Top Search
+							============================================= -->
+                <div id="top-search" class="header-misc-icon">
+                  <a href="#" id="top-search-trigger"
+                    ><i class="icon-line-search"></i
+                    ><i class="icon-line-cross"></i
+                  ></a>
+                </div>
+                <!-- #top-search end -->
+              </div>
+
+              <div id="primary-menu-trigger">
+                <svg class="svg-trigger" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Primary Navigation
+						============================================= -->
+              <nav class="primary-menu not-dark">
+                <ul class="menu-container">
+                  <li class="menu-item active">
+                    <a class="menu-link" href="index.html"><div>Home</div></a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Destinations</div></a>
+                    <ul class="sub-menu-container">
+                      <li class="menu-item">
+                        <a class="menu-link" href="index.html"
+                          ><div>United Arab Emirates</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Sultanate of Oman</div></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="services.html"
+                      ><div>Services</div></a
+                    >
+                    <ul class="sub-menu-container">
+                      <li class="menu-item">
+                        <a class="menu-link" href="meetings-events.html"
+                          ><div>Meetings & Events</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Hotel Bookings</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Group Bookings</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"><div>Transfers</div></a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Visa Services</div></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Tour Packages</div></a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Things To Do</div></a>
+                    <ul class="sub-menu-container">
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Dubai Activities</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>AUH & Al Ain Activities</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Other Emirates Activities</div></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Must See!</div></a>
+                    <ul class="sub-menu-container">
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Top Attractions UAE</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Top Attractions Oman</div></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end -->
+
+              <form class="top-search-form" action="search.html" method="get">
+                <input
+                  type="text"
+                  name="q"
+                  class="form-control"
+                  value=""
+                  placeholder="Type &amp; Hit Enter.."
+                  autocomplete="off"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end -->
+
+      <!-- Page Title
+		============================================= -->
+      <section id="page-title">
+        <div class="container clearfix">
+          <h1>Meetings &amp; Events</h1>
+          <span>Inquiry Forms</span>
+          <!-- <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Widgets</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Event Registration Form
+            </li>
+          </ol> -->
+        </div>
+      </section>
+      <!-- #page-title end -->
+
+      <!-- Content
+		============================================= -->
+      <section id="content">
+        <div class="content-wrap">
+          <div class="container clearfix">
+            <div class="form-widget">
+              <div class="form-result"></div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <form
+                    class="row"
+                    id="event-registration"
+                    action="include/form.php"
+                    method="post"
+                    enctype="multipart/form-data"
+                  >
+                    <div class="form-process">
+                      <div class="css3-spinner">
+                        <div class="css3-spinner-scaler"></div>
+                      </div>
+                    </div>
+                    <div class="col-6 form-group bottommargin-sm">
+                      <label>Company Name:</label>
+                      <input
+                        type="text"
+                        name="event-registration-company-name"
+                        id="event-registration-company-name"
+                        class="form-control required"
+                        value=""
+                        placeholder="Enter Company Name"
+                      />
+                    </div>
+                    <div class="col-6 form-group">
+                      <label>Phone:</label>
+                      <input
+                        type="number"
+                        name="event-registration-number"
+                        id="event-registration-number"
+                        class="form-control required"
+                        value=""
+                        placeholder="Enter Phone Number"
+                      />
+                    </div>
+                    <div class="col-6 form-group bottommargin-sm">
+                      <label>First Name:</label>
+                      <input
+                        type="text"
+                        name="event-registration-first-name"
+                        id="event-registration-first-name"
+                        class="form-control required"
+                        value=""
+                        placeholder="Enter your First Name"
+                      />
+                    </div>
+                    <div class="col-6 form-group">
+                      <label>Last Name:</label>
+                      <input
+                        type="text"
+                        name="event-registration-last-name"
+                        id="event-registration-last-name"
+                        class="form-control required"
+                        value=""
+                        placeholder="Enter your Last Name"
+                      />
+                    </div>
+                    <div class="col-6 form-group bottommargin-sm">
+                      <label>Agent Reference No:</label>
+                      <input
+                        type="email"
+                        name="event-registration-agent-number"
+                        id="event-registration-agent-number"
+                        class="form-control required"
+                        value=""
+                        placeholder="Enter Agent Reference Number"
+                      />
+                    </div>
+                    <div class="col-6 form-group">
+                      <label>Email:</label>
+                      <input
+                        type="email"
+                        name="event-registration-email"
+                        id="event-registration-email"
+                        class="form-control required"
+                        value=""
+                        placeholder="Enter your Email Address"
+                      />
+                    </div>
+                    <div class="col-6 form-group">
+                      <label
+                        for="template-contactform-pax"
+                        class="mb-3 clearfix"
+                        >Select No. of Pax:</label
+                      >
+                      <input
+                        id="template-contactform-pax"
+                        name="template-contactform-pax"
+                        class="range_01 input-range-slider"
+                      />
+                    </div>
+                    <div class="col-6 form-group">
+                      <label>Guest Nationality:</label>
+                      <input
+                        type="text"
+                        name="event-registration-guest-nationality"
+                        id="event-registration-guest-nationality"
+                        class="form-control required"
+                        value=""
+                        placeholder="Enter Guest Nationality"
+                      />
+                    </div>
+                    <div class="col-6 form-group">
+                      <label>Gender:</label><br />
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input required"
+                          type="radio"
+                          name="event-registration-gender"
+                          id="event-registration-gender-male"
+                          value="Male"
+                        />
+                        <label
+                          class="form-check-label nott"
+                          for="event-registration-gender-male"
+                          >Male</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="event-registration-gender"
+                          id="event-registration-gender-female"
+                          value="Female"
+                        />
+                        <label
+                          class="form-check-label nott"
+                          for="event-registration-gender-female"
+                          >Female</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-6 form-group">
+                      <label>Interests</label>
+                      <select
+                        class="form-select required"
+                        name="event-registration-interests"
+                        id="event-registration-interests"
+                      >
+                        <option value="">-- Select One --</option>
+                        <option value="UX Design">UX Design</option>
+                        <option value="Backend Development">
+                          Backend Development
+                        </option>
+                        <option value="Videography">Videography</option>
+                        <option value="VFX Animations">VFX Animations</option>
+                        <option value="Others">Others</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label>Website:</label>
+                        <input
+                          type="text"
+                          name="event-registration-website"
+                          id="event-registration-website"
+                          class="form-control required url"
+                          value="https://"
+                          placeholder="Enter your Website Address"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label>Bio:</label>
+                        <textarea
+                          name="event-registration-bio"
+                          id="event-registration-bio"
+                          class="form-control required"
+                          cols="30"
+                          rows="5"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-6 form-group">
+                      <label>Social Media Handles:</label>
+                      <div class="input-group">
+                        <span class="input-group-text">Twitter</span>
+                        <input
+                          type="text"
+                          name="event-registration-twitter"
+                          id="event-registration-twitter"
+                          class="form-control"
+                          value=""
+                          placeholder="@username"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6 form-group">
+                      <label for="">&nbsp;</label>
+                      <div class="input-group">
+                        <span class="input-group-text">Github</span>
+                        <input
+                          type="text"
+                          name="event-registration-github"
+                          id="event-registration-github"
+                          class="form-control"
+                          value=""
+                          placeholder="@username"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label>Event Passes</label>
+                        <select
+                          class="form-select required"
+                          name="event-registration-passes"
+                          id="event-registration-passes"
+                        >
+                          <option value="">-- Select One --</option>
+                          <option value="Contributors Day + Main Event">
+                            Contributors Day + Main Event
+                          </option>
+                          <option value="Main Event only">
+                            Main Event only
+                          </option>
+                          <option value="VIP Access">
+                            All Days + VIP Access to Insiders Club
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label>How did you hear about the Event?</label>
+                        <select
+                          class="form-select required"
+                          name="event-registration-know-us"
+                          id="event-registration-know-us"
+                        >
+                          <option value="">-- Select One --</option>
+                          <option value="Google">Google</option>
+                          <option value="Social Media">Social Media</option>
+                          <option value="Friends">Friends</option>
+                          <option value="Advertisement">Advertisement</option>
+                          <option value="Others">Others</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 d-none">
+                      <input
+                        type="text"
+                        id="event-registration-botcheck"
+                        name="event-registration-botcheck"
+                        value=""
+                      />
+                    </div>
+                    <div class="col-12">
+                      <button
+                        type="submit"
+                        name="event-registration-submit"
+                        class="btn btn-secondary"
+                      >
+                        Register
+                      </button>
+                    </div>
+
+                    <input
+                      type="hidden"
+                      name="prefix"
+                      value="event-registration-"
+                    />
+                  </form>
+                </div>
+                <!-- 
+                <div class="col-lg-6 ps-lg-4">
+                  <p>
+                    <span class="dropcap">F</span>oster best practices
+                    effectiveness inspire breakthroughs solve immunize turmoil.
+                    Policy dialogue peaceful The Elders rural global support.
+                    Process inclusive innovate readiness, public sector
+                    complexity. Lifting people up cornerstone partner,
+                    technology working families civic engagement activist
+                    recognize potential global network. Countries tackling
+                    solution respond change-makers tackle. Assistance, giving;
+                    fight against malnutrition experience in the field lasting
+                    change scalable. Empowerment long-term, fairness policy
+                    community progress social responsibility; Cesar Chavez
+                    recognition. Expanding community ownership visionary
+                    indicator pursue these aspirations accessibility. Achieve;
+                    worldwide, life-saving initiative facilitate. New
+                    approaches, John Lennon humanitarian relief fundraise
+                    vaccine Jane Jacobs community health workers Oxfam. Our
+                    ambitions informal economies.
+                  </p>
+
+                  <blockquote class="topmargin bottommargin">
+                    <p>
+                      Human rights healthcare immunize; advancement grantees.
+                      Medical supplies; meaningful, truth technology catalytic
+                      effect. Promising development capacity building
+                      international enable poverty.
+                    </p>
+                  </blockquote>
+
+                  <div class="w-100">
+                    <p>
+                      Provide, Aga Khan, interconnectivity governance fairness
+                      replicable, new approaches visionary implementation. End
+                      hunger evolution, future promising development youth.
+                      Public sector, small-scale farmers; harness facilitate
+                      gender. Contribution dedicated global change movements,
+                      prosperity accelerate progress citizens of change.
+                      Elevate; accelerate reduce child mortality; billionaire
+                      philanthropy fluctuation, plumpy'nut care opportunity
+                      catalyze. Partner deep.
+                    </p>
+                  </div>
+
+                  <div class="w-100">
+                    <p>
+                      Frontline harness criteria governance freedom
+                      contribution. Campaign Angelina Jolie natural resources,
+                      Rockefeller peaceful philanthropy human potential.
+                      Justice; outcomes reduce carbon emissions nonviolent
+                      resistance human being. Solve innovate aid communities;
+                      benefit truth rural development UNICEF meaningful work.
+                      Generosity Action Against Hunger relief; many voices
+                      impact crisis situation poverty pride. Vaccine carbon.
+                    </p>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <!-- Footer
+		============================================= -->
+      <footer id="footer" class="border-0 bg-white">
+        <div class="container">
+          <!-- Footer Widgets
+				============================================= -->
+          <div class="footer-widgets-wrap pb-5 clearfix">
+            <div class="row col-mb-50">
+              <div class="col-md-8">
+                <div class="widget clearfix">
+                  <img
+                    src="images/adonis-logo.png"
+                    alt="Footer Logo"
+                    class="alignleft"
+                    style="
+                      margin-top: 8px;
+                      padding-right: 18px;
+                      border-right: 1px solid #ddd;
+                      width: 175px;
+                    "
+                  />
+
+                  <p>
+                    <br />
+                    Always maintains <strong>a high</strong>,
+                    <strong>quality of</strong>
+                    <strong>service</strong> that meets its standards to
+                    guarantee the maximum tourist satisfaction to enjoy their
+                    vacations or business during their stay in the United Arab
+                    Emirates.
+                  </p>
+
+                  <div class="line line-sm"></div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                      <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                      <ul>
+                        <li><a href="#">Meetings &amp; Events</a></li>
+                        <li><a href="#">Hotel Bookings</a></li>
+                        <li><a href="#">Group Bookings</a></li>
+                        <li><a href="#">Transfers</a></li>
+                        <li><a href="#">Visa Services</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                      <ul>
+                        <li><a href="#">Things To Do</a></li>
+                        <li><a href="#">Dubai Activities</a></li>
+                        <li><a href="#">Abu Dhabi Activities</a></li>
+                        <li><a href="#">Al Ain Activities</a></li>
+                        <li><a href="#">Other Emirates Activities</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                      <ul>
+                        <li><a href="#">Top Tour Packages</a></li>
+                        <li><a href="#">Top Attractions U.A.E</a></li>
+                        <li><a href="#">Top Attractions Oman</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Teams</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="widget clearfix">
+                  <div class="row clearfix">
+                    <div class="col-12">
+                      <div
+                        class="feature-box fbox-plain fbox-sm align-items-center"
+                      >
+                        <div class="fbox-icon">
+                          <i class="icon-envelope text-dark"></i>
+                        </div>
+                        <div class="fbox-content">
+                          <span class="text-muted">Call Us:</span><br />
+                          <h3 class="nott ls0 fw-semibold">
+                            (+971) 4 255 2925
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                      <div
+                        class="feature-box fbox-plain fbox-sm align-items-center"
+                      >
+                        <div class="fbox-icon">
+                          <i class="icon-phone3 text-dark"></i>
+                        </div>
+                        <div class="fbox-content">
+                          <span class="text-muted">Email Us:</span><br />
+                          <h3 class="nott ls0 fw-semibold">
+                            info@adonistourism.com
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="widget subscribe-widget clearfix">
+                  <h5>
+                    <strong>Subscribe</strong> to Our Newsletter to get
+                    Important News, Amazing Offers &amp; Inside Scoops:
+                  </h5>
+                  <div class="widget-subscribe-form-result"></div>
+                  <form
+                    id="widget-subscribe-form"
+                    action="include/subscribe.php"
+                    method="post"
+                    class="mb-0"
+                  >
+                    <div class="input-group mx-auto">
+                      <div class="input-group-text bg-transparent">
+                        <i class="icon-email2"></i>
+                      </div>
+                      <input
+                        type="email"
+                        id="widget-subscribe-form-email"
+                        name="widget-subscribe-form-email"
+                        class="form-control required email"
+                        placeholder="Enter your Email"
+                      />
+                      <button
+                        class="btn btn-success button button-color nott ls0 m-0"
+                        type="submit"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <!-- 
+                <div class="widget">
+                  <div class="row col-mb-30">
+                    <div class="col-lg-6 col-md-12 col-6">
+                      <a
+                        href="https://facebook.com/semicolonweb"
+                        target="_blank"
+                        class="social-icon si-dark si-colored si-facebook mb-0"
+                        style="margin-right: 10px"
+                      >
+                        <i class="icon-facebook"></i>
+                        <i class="icon-facebook"></i>
+                      </a>
+                      <a
+                        href="https://facebook.com/semicolonweb"
+                        target="_blank"
+                        class="text-dark"
+                        ><small style="display: block; margin-top: 3px"
+                          ><strong>Like us</strong><br />on Facebook</small
+                        ></a
+                      >
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-6">
+                      <a
+                        href="https://themeforest.net/user/SemiColonWeb/follow"
+                        target="_blank"
+                        class="social-icon si-dark si-colored si-rss mb-0"
+                        style="margin-right: 10px"
+                      >
+                        <i class="icon-rss"></i>
+                        <i class="icon-rss"></i>
+                      </a>
+                      <a
+                        href="https://themeforest.net/user/SemiColonWeb/follow"
+                        target="_blank"
+                        class="text-dark"
+                        ><small style="display: block; margin-top: 3px"
+                          ><strong>Subscribe</strong><br />to RSS Feeds</small
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                 -->
+              </div>
+            </div>
+          </div>
+          <!-- .footer-widgets-wrap end -->
+        </div>
+
+        <!-- Copyrights
+			============================================= -->
+        <div
+          id="copyrights"
+          style="
+            background: url('demos/seo/images/hero/footer.svg') no-repeat top
+              center;
+            background-size: cover;
+            padding-top: 70px;
+          "
+        >
+          <div class="container clearfix">
+            <div class="row justify-content-between col-mb-30">
+              <div class="col-12 col-lg-auto text-center text-lg-start">
+                Copyrights &copy; 2022 All Rights Reserved by Adonis Tourism
+                L.L.C<br />
+                <div class="copyright-links">
+                  <a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-auto text-center text-lg-end">
+                <div class="copyrights-menu copyright-links clearfix">
+                  <a href="#">Home</a>/<a href="#">About Us</a>/<a href="#"
+                    >Team</a
+                  >/<a href="#">Clients</a>/<a href="#">FAQs</a>/<a href="#"
+                    >Contact</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #copyrights end -->
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
+    <!-- Range Slider Plugin -->
+    <script src="js/components/rangeslider.min.js"></script>
+
+    <script>
+      jQuery(window).on("pluginCarouselReady", function () {
+        $("#oc-features").owlCarousel({
+          items: 1,
+          margin: 60,
+          nav: true,
+          navText: [
+            '<i class="icon-line-arrow-left"></i>',
+            '<i class="icon-line-arrow-right"></i>',
+          ],
+          dots: false,
+          stagePadding: 30,
+          responsive: {
+            768: { items: 2 },
+            1200: { stagePadding: 200 },
+          },
+        });
+      });
+    </script>
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(".range_01").ionRangeSlider({
+          grid: true,
+          min: 1,
+          max: 100,
+          from: 1,
+          prefix: "Pax ",
+          max_postfix: "+",
+        });
+
+        jQuery(".select-tags").select2({
+          tags: true,
+          placeholder: "Add Values and Press Enter",
+        });
+
+        jQuery(".datetimepicker1").datetimepicker();
+
+        jQuery(".selectsplitter").selectsplitter();
+
+        tinymce.init({
+          selector: ".textarea-message",
+          menubar: false,
+          setup: function (editor) {
+            editor.on("change", function (e) {
+              editor.save();
+            });
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

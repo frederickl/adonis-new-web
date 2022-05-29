@@ -23,10 +23,17 @@
       href="demos/business/css/fonts.css"
       type="text/css"
     />
-  	<link rel="stylesheet" href="demos/course/css/fonts.css" type="text/css" />
-  	<link rel="stylesheet" href="demos/course/course.css" type="text/css" />
-  	
+    <link rel="stylesheet" href="demos/course/css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="demos/course/course.css" type="text/css" />
+
     <link rel="stylesheet" href="one-page/onepage.css" type="text/css" />
+    <link rel="stylesheet" href="demos/seo/css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="demos/seo/seo.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="demos/real-estate/css/font-icons.css"
+      type="text/css"
+    />
 
     <!-- / -->
 
@@ -35,7 +42,11 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 
     <link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
-  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      type="text/css"
+    />
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -47,64 +58,110 @@
 	============================================= -->
     <link rel="stylesheet" href="css/colors.php?color=00BED7" type="text/css" />
 
-  <style>
+    <style>
+          .block-expand-categories h1,
+          .block-expand-categories h2,
+          .block-expand-categories h3 {
+            font-family: Playfair Display, serif !important;
+          }
 
-      .block-expand-categories h1,
-      .block-expand-categories h2,
-      .block-expand-categories h3 { font-family: Playfair Display, serif !important; }
+          .block-expand-categories .expand-category {
+            --height: 50vh;
+            --responsive-height: 60px;
+            --hover-flex: 10;
 
-      .block-expand-categories .expand-category {
-        --height: 50vh;
-        --responsive-height: 60px;
-        --hover-flex: 10;
+            position: relative;
+            background-position: center center;
+            background-size: cover;
+            border-radius: 20px;
+            margin: 10px 0;
+            min-height: var(--responsive-height);
+            cursor: pointer;
+          }
 
-        position: relative;
-        background-position: center center;
-        background-size: cover;
-        border-radius: 20px;
-        margin: 10px 0;
-        min-height: var(--responsive-height);
-        cursor: pointer;
+          .block-expand-categories .expand-category h4 {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: 0;
+            transform: translateY(-50%);
+          }
+
+          /* Larger Device */
+          @media (min-width: 992px) {
+            .block-expand-categories .expand-category {
+              height: var(--height);
+              flex: 1;
+              margin: 0 10px;
+              transition: flex 1s ease;
+              -webkit-backface-visibility: hidden;
+              transform: translate3d(0, 0, 0);
+            }
+
+            .block-expand-categories:not(.on-click) .expand-category:hover,
+            .block-expand-categories.on-click .expand-category.active {
+              flex: var(--hover-flex);
+            }
+
+            .block-expand-categories .expand-category h4 {
+              opacity: 1;
+              top: auto;
+              bottom: 10px;
+              transform: none;
+              transition: opacity 0.4s ease;
+            }
+
+            .block-expand-categories:hover
+              .expand-category:not(.active):not(:hover)
+              h4,
+            .block-expand-categories.on-click .expand-category:not(.active) h4 {
+              opacity: 0;
+            }
+          }
+
+      .play-icon {
+      	position: relative;
+      	display: block;
+      	font-size: 28px;
+      	width: 60px;
+      	height: 60px;
+      	line-height: 62px;
+      	left: 50%;
+      	margin-left: -30px;
+      	border-radius: 50%;
+      	color: #FFF !important;
+      	background-color: #dc143c;
+      	-webkit-transition: transform .3s ease;
+      	-o-transition: transform .3s ease;
+      	transition: transform .3s ease;
       }
 
-      .block-expand-categories .expand-category h4 {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        text-align: center;
-        margin: 0;
-        transform: translateY(-50%);
+      .play-icon i {
+      	position: relative;
+      	left: 4px;"
       }
 
-      /* Larger Device */
-      @media (min-width: 992px) {
-
-        .block-expand-categories .expand-category {
-          height: var(--height);
-          flex: 1;
-          margin: 0 10px;
-          transition: flex 1s ease;
-          -webkit-backface-visibility: hidden;
-          transform: translate3d(0,0,0);
-        }
-
-        .block-expand-categories:not(.on-click) .expand-category:hover,
-        .block-expand-categories.on-click .expand-category.active { flex: var(--hover-flex); }
-
-        .block-expand-categories .expand-category h4 {
-          opacity: 1;
-          top: auto;
-          bottom: 10px;
-          transform: none;
-          transition: opacity .4s ease;
-        }
-
-        .block-expand-categories:hover .expand-category:not(.active):not(:hover) h4,
-        .block-expand-categories.on-click .expand-category:not(.active) h4 { opacity: 0; }
-
+      .play-icon:hover {
+      	-webkit-transform: scale(1.15);
+      	-ms-transform: scale(1.15);
+      	-o-transform: scale(1.15);
+      	transform: scale(1.15);
       }
 
+      body.device-xl .onepage-outdoor-negetive,
+      body.device-lg .onepage-outdoor-negetive { margin-top: -300px; }
+
+      @media (min-width: 768px) {
+      	#slider h2 { font-size: 52px; }
+
+      	.text-overlay-title h3 {
+      		font-size: 22px;
+      		letter-spacing: 1px;
+      		font-weight: 600;
+      	}
+      }
     </style>
 
     <!-- Document Title
@@ -197,10 +254,12 @@
                     </ul>
                   </li>
                   <li class="menu-item">
-                    <a class="menu-link" href="#"><div>Services</div></a>
+                    <a class="menu-link" href="services.html"
+                      ><div>Services</div></a
+                    >
                     <ul class="sub-menu-container">
                       <li class="menu-item">
-                        <a class="menu-link" href="#"
+                        <a class="menu-link" href="meetings-events.html"
                           ><div>Meetings & Events</div></a
                         >
                       </li>
@@ -238,7 +297,7 @@
                       </li>
                       <li class="menu-item">
                         <a class="menu-link" href="#"
-                          ><div>Abu Dhabi & Al Ain Activities</div></a
+                          ><div>AUH & Al Ain Activities</div></a
                         >
                       </li>
                       <li class="menu-item">
@@ -286,35 +345,81 @@
 
       <!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element slider-parallax min-vh-100 dark include-header">
-			<div class="slider-inner" style="background: url('one-page/images/page/5.jpg') bottom center no-repeat; background-size: cover;">
+      <section
+        id="slider"
+        class="slider-element dark swiper_wrapper max-vh-75 max-vh-md-100 max-vh-lg-none include-header"
+        style="height: 900px"
+        data-effect="fade"
+        data-autoplay="5000"
+        data-loop="true"
+        data-speed="1000"
+        data-progress="true"
+      >
+        <div class="slider-inner">
+          <div class="swiper-container swiper-parent">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide dark">
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url('one-page/images/page/outdoor-4.jpg');
+                    background-position: center center;
+                  "
+                ></div>
+              </div>
+              <div class="swiper-slide dark">
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url('one-page/images/page/outdoor-5.jpg');
+                    background-position: center center;
+                  "
+                ></div>
+              </div>
+              <div class="swiper-slide dark">
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url('one-page/images/page/outdoor-6.jpg');
+                    background-position: center center;
+                  "
+                ></div>
+              </div>
+              <div class="swiper-slide dark">
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url('one-page/images/page/outdoor-7.jpg');
+                    background-position: center center;
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
 
-				<div class="vertical-middle">
-					<div class="container">
-
-						<div class="emphasis-title mb-0">
-							<h2 class="fw-bold text-uppercase ls3 bottommargin-sm" style="font-family: 'Montserrat', sans-serif;">Adonis Tourism L.L.C <br>
-                <span class="text-rotater nocolor" data-separator="|" data-rotate="fadeInLeft" data-speed="4000">
-								<span class="t-rotate">You Travel,|We Care</span>
-							  </span>
+          <div class="vertical-middle">
+            <div class="container center">
+              <h2 class="fw-bold mb-0" style="font-family: 'Playfair Display'">
+                You Travel, We Care
               </h2>
-							<div class="inline-block"><a id="play-hero-video" href="https://www.youtube.com/watch?v=wJ7F6cuRDos" class="big-video-button small-video-button pulse animated infinite" data-lightbox="iframe"><i class="icon-line-play"></i></a><span style="font-size:20px; margin-left:15px;">Play Video</span></div>
-						</div>
-
-					</div>
-				</div>
-
-				<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
-
-			</div>
-		</section><!-- #slider end -->
-
+              <p class="ls1 fw-light">Adonis Tourism L.L.C</p>
+              <a
+                href="https://www.youtube.com/watch?v=wJ7F6cuRDos"
+                class="play-icon"
+                data-lightbox="iframe"
+                ><i class="icon-googleplay"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #slider end -->
       <!-- Content
 		============================================= -->
       <section id="content">
         <!-- Brands Carousel
 				============================================= -->
-<!--         
+        <!--         
         <div class="section m-0 clearfix" style="padding: 80px 0">
           <div
             id="oc-clients-full"
@@ -381,53 +486,108 @@
               <h3>Top Attractions</h3>
             </div>
             <div class="row clearfix">
-					<div class="block-expand-categories flex-column flex-lg-row d-flex justify-content-center">
-						<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/ta-burj-khalifa.jpg');">
-							<h4><a href="#" class="text-light">Burj Khalifa</a></h4>
-						</div>
+              <div
+                class="block-expand-categories flex-column flex-lg-row d-flex justify-content-center"
+              >
+                <div
+                  class="expand-category bg-light"
+                  style="
+                    background-image: url('images/blocks/preview/exp-cards/ta-burj-khalifa.jpg');
+                  "
+                >
+                  <h4><a href="#" class="text-light">Burj Khalifa</a></h4>
+                </div>
 
-						<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/ta-burj-al-arab.jpg');">
-							<h4><a href="#" class="text-light">Burj Al Arab</a></h4>
-						</div>
+                <div
+                  class="expand-category bg-light"
+                  style="
+                    background-image: url('images/blocks/preview/exp-cards/ta-burj-al-arab.jpg');
+                  "
+                >
+                  <h4><a href="#" class="text-light">Burj Al Arab</a></h4>
+                </div>
 
-						<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/ta-the-palm-jumeirah.jpeg');">
-							<h4><a href="#" class="text-light">The Palm Jumeirah</a></h4>
-						</div>
+                <div
+                  class="expand-category bg-light"
+                  style="
+                    background-image: url('images/blocks/preview/exp-cards/ta-the-palm-jumeirah.jpeg');
+                  "
+                >
+                  <h4><a href="#" class="text-light">The Palm Jumeirah</a></h4>
+                </div>
 
-						<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/ta-dubai-creek.jpg');">
-							<h4><a href="#" class="text-light">Dubai Creek</a></h4>
-						</div>
+                <div
+                  class="expand-category bg-light"
+                  style="
+                    background-image: url('images/blocks/preview/exp-cards/ta-dubai-creek.jpg');
+                  "
+                >
+                  <h4><a href="#" class="text-light">Dubai Creek</a></h4>
+                </div>
 
-						<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/ta-dubai-fountain.jpg');">
-							<h4><a href="#" class="text-light">The Dubai Fountain</a></h4>
-						</div>
+                <div
+                  class="expand-category bg-light"
+                  style="
+                    background-image: url('images/blocks/preview/exp-cards/ta-dubai-fountain.jpg');
+                  "
+                >
+                  <h4><a href="#" class="text-light">The Dubai Fountain</a></h4>
+                </div>
 
-						<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/ta-dubai-museum.jpg');">
-							<h4><a href="#" class="text-light">Dubai Museum</a></h4>
-						</div>
+                <div
+                  class="expand-category bg-light"
+                  style="
+                    background-image: url('images/blocks/preview/exp-cards/ta-dubai-museum.jpg');
+                  "
+                >
+                  <h4><a href="#" class="text-light">Dubai Museum</a></h4>
+                </div>
 
-						<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/ta-sz-grand-mosque.jpeg');">
-							<h4><a href="#" class="text-light">SZ Grand Mosque</a></h4>
-						</div>
+                <div
+                  class="expand-category bg-light"
+                  style="
+                    background-image: url('images/blocks/preview/exp-cards/ta-sz-grand-mosque.jpeg');
+                  "
+                >
+                  <h4><a href="#" class="text-light">SZ Grand Mosque</a></h4>
+                </div>
 
-						<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/ta-louvre-abu-dhabi.jpg');">
-							<h4><a href="#" class="text-light">Louvre Abu Dhabi</a></h4>
-						</div>
+                <div
+                  class="expand-category bg-light"
+                  style="
+                    background-image: url('images/blocks/preview/exp-cards/ta-louvre-abu-dhabi.jpg');
+                  "
+                >
+                  <h4><a href="#" class="text-light">Louvre Abu Dhabi</a></h4>
+                </div>
 
-						<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/ta-qasr-al-watan.jpg');">
-							<h4><a href="#" class="text-light">Qasr Al Watan</a></h4>
-						</div>
+                <div
+                  class="expand-category bg-light"
+                  style="
+                    background-image: url('images/blocks/preview/exp-cards/ta-qasr-al-watan.jpg');
+                  "
+                >
+                  <h4><a href="#" class="text-light">Qasr Al Watan</a></h4>
+                </div>
 
-						<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/ta-mleiha.jpeg');">
-							<h4><a href="#" class="text-light">Mleiha</a></h4>
-						</div>
+                <div
+                  class="expand-category bg-light"
+                  style="
+                    background-image: url('images/blocks/preview/exp-cards/ta-mleiha.jpeg');
+                  "
+                >
+                  <h4><a href="#" class="text-light">Mleiha</a></h4>
+                </div>
 
-						<div class="expand-category bg-light" style="background-image: url('images/blocks/preview/exp-cards/ta-flag-island-sharjah.jpg');">
-							<h4><a href="#" class="text-light">Flag Island</a></h4>
-						</div>
-
-          </div>
-
+                <div
+                  class="expand-category bg-light"
+                  style="
+                    background-image: url('images/blocks/preview/exp-cards/ta-flag-island-sharjah.jpg');
+                  "
+                >
+                  <h4><a href="#" class="text-light">Flag Island</a></h4>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -461,17 +621,20 @@
                     <h3>Dubai Miraculous Tour</h3>
                     <ul class="iconlist">
                       <li><i class="icon-time"></i> Full Day Tour</li>
-                      <li><i class="icon-language"></i> English-Italian-French</li>
+                      <li>
+                        <i class="icon-language"></i> English-Italian-French
+                      </li>
                       <li><i class="icon-calendar-alt1"></i> Sun-Wed</li>
                       <li><i class="icon-user-friends"></i> Min. 2 Pax</li>
                     </ul>
                     <p>
-                      lorem ipsum dolor sit amet consectetur adipiscing elit
-                      sed ante montes fringilla ridiculus ullamcorper et mi 
-                      nunc commodo massa malesuada aliquet diam per interdum 
-                      tellus quam gravida luctus libero aliquam cras quis fames 
-                      praesent tortor lacinia hendrerit magnis sagittis dictum 
-                      congue rutrum pellentesque porttitor penatibus mattis class odio venenatis tempor
+                      lorem ipsum dolor sit amet consectetur adipiscing elit sed
+                      ante montes fringilla ridiculus ullamcorper et mi nunc
+                      commodo massa malesuada aliquet diam per interdum tellus
+                      quam gravida luctus libero aliquam cras quis fames
+                      praesent tortor lacinia hendrerit magnis sagittis dictum
+                      congue rutrum pellentesque porttitor penatibus mattis
+                      class odio venenatis tempor
                     </p>
                     <a href="#" class="button-link">Read More</a>
                   </div>
@@ -489,17 +652,20 @@
                     <h3>Abu Dhabi Royal Tour</h3>
                     <ul class="iconlist">
                       <li><i class="icon-time"></i> Full Day Tour</li>
-                      <li><i class="icon-language"></i> English-Italian-French</li>
+                      <li>
+                        <i class="icon-language"></i> English-Italian-French
+                      </li>
                       <li><i class="icon-calendar-alt1"></i> Sun-Wed</li>
                       <li><i class="icon-user-friends"></i> Min. 2 Pax</li>
                     </ul>
                     <p>
-                      lorem ipsum dolor sit amet consectetur adipiscing elit
-                      sed ante montes fringilla ridiculus ullamcorper et mi 
-                      nunc commodo massa malesuada aliquet diam per interdum 
-                      tellus quam gravida luctus libero aliquam cras quis fames 
-                      praesent tortor lacinia hendrerit magnis sagittis dictum 
-                      congue rutrum pellentesque porttitor penatibus mattis class odio venenatis tempor
+                      lorem ipsum dolor sit amet consectetur adipiscing elit sed
+                      ante montes fringilla ridiculus ullamcorper et mi nunc
+                      commodo massa malesuada aliquet diam per interdum tellus
+                      quam gravida luctus libero aliquam cras quis fames
+                      praesent tortor lacinia hendrerit magnis sagittis dictum
+                      congue rutrum pellentesque porttitor penatibus mattis
+                      class odio venenatis tempor
                     </p>
                     <a href="#" class="button-link">Read More</a>
                   </div>
@@ -517,17 +683,22 @@
                     <h3>Sharjah & Ajman Tours</h3>
                     <ul class="iconlist">
                       <li><i class="icon-time"></i> Half Day Tour</li>
-                      <li><i class="icon-language"></i> English-Italian-French</li>
-                      <li><i class="icon-calendar-alt1"></i> Sat-Sun-Tue-Wed-Thu</li>
+                      <li>
+                        <i class="icon-language"></i> English-Italian-French
+                      </li>
+                      <li>
+                        <i class="icon-calendar-alt1"></i> Sat-Sun-Tue-Wed-Thu
+                      </li>
                       <li><i class="icon-user-friends"></i> Min. 4 Pax</li>
                     </ul>
                     <p>
-                      lorem ipsum dolor sit amet consectetur adipiscing elit
-                      sed ante montes fringilla ridiculus ullamcorper et mi 
-                      nunc commodo massa malesuada aliquet diam per interdum 
-                      tellus quam gravida luctus libero aliquam cras quis fames 
-                      praesent tortor lacinia hendrerit magnis sagittis dictum 
-                      congue rutrum pellentesque porttitor penatibus mattis class odio venenatis tempor
+                      lorem ipsum dolor sit amet consectetur adipiscing elit sed
+                      ante montes fringilla ridiculus ullamcorper et mi nunc
+                      commodo massa malesuada aliquet diam per interdum tellus
+                      quam gravida luctus libero aliquam cras quis fames
+                      praesent tortor lacinia hendrerit magnis sagittis dictum
+                      congue rutrum pellentesque porttitor penatibus mattis
+                      class odio venenatis tempor
                     </p>
                     <a href="#" class="button-link">Read More</a>
                   </div>
@@ -545,17 +716,22 @@
                     <h3>Northern Emirates Tours</h3>
                     <ul class="iconlist">
                       <li><i class="icon-time"></i> Full Day Tour</li>
-                      <li><i class="icon-language"></i> English-Italian-French</li>
-                      <li><i class="icon-calendar-alt1"></i> Sat-Sun-Tue-Wed-Thu</li>
+                      <li>
+                        <i class="icon-language"></i> English-Italian-French
+                      </li>
+                      <li>
+                        <i class="icon-calendar-alt1"></i> Sat-Sun-Tue-Wed-Thu
+                      </li>
                       <li><i class="icon-user-friends"></i> Min. 4 Pax</li>
                     </ul>
                     <p>
-                      lorem ipsum dolor sit amet consectetur adipiscing elit
-                      sed ante montes fringilla ridiculus ullamcorper et mi 
-                      nunc commodo massa malesuada aliquet diam per interdum 
-                      tellus quam gravida luctus libero aliquam cras quis fames 
-                      praesent tortor lacinia hendrerit magnis sagittis dictum 
-                      congue rutrum pellentesque porttitor penatibus mattis class odio venenatis tempor
+                      lorem ipsum dolor sit amet consectetur adipiscing elit sed
+                      ante montes fringilla ridiculus ullamcorper et mi nunc
+                      commodo massa malesuada aliquet diam per interdum tellus
+                      quam gravida luctus libero aliquam cras quis fames
+                      praesent tortor lacinia hendrerit magnis sagittis dictum
+                      congue rutrum pellentesque porttitor penatibus mattis
+                      class odio venenatis tempor
                     </p>
                     <a href="#" class="button-link">Read More</a>
                   </div>
@@ -564,125 +740,190 @@
             </div>
           </div>
 
-					<!-- Top Packages
+          <!-- Top Packages
 					============================================= -->
 
-				<div class="section topmargin-lg parallax" style="padding: 80px 0 60px; background-image: url('demos/course/images/icon-pattern.jpg'); background-size: auto; background-repeat: repeat"  data-bottom-top="background-position:0px 100px;" data-top-bottom="background-position:0px -500px;">
+          <div
+            class="section topmargin-lg parallax"
+            style="
+              padding: 80px 0 60px;
+              background-image: url('demos/course/images/icon-pattern.jpg');
+              background-size: auto;
+              background-repeat: repeat;
+            "
+            data-bottom-top="background-position:0px 100px;"
+            data-top-bottom="background-position:0px -500px;"
+          >
+            <div class="container">
+              <div class="heading-block center border-0" data-heading="P">
+                <h3 class="nott ls0">Top Tour Packages</h3>
+              </div>
 
-					<div class="container">
+              <div class="clear"></div>
 
-            <div class="heading-block center border-0" data-heading="P">
-              <h3 class="nott ls0">Top Tour Packages</h3>
-            </div>
-
-						<div class="clear"></div>
-
-						<div class="row mt-2">
-
-							<!-- Package 1
+              <div class="row mt-2">
+                <!-- Package 1
 							============================================= -->
-							<div class="col-md-4 mb-5">
-								<div class="card course-card hover-effect border-0">
-									<a href="#"><img class="card-img-top" src="demos/course/images/courses/1.jpg" alt="Card image cap"></a>
-									<div class="card-body">
-										<h4 class="card-title fw-bold mb-2">STOP OVER</h4>
-										<p class="card-text text-black-50 mb-1">Stopover in Dubai or Abu Dhabi and get affordable packages to discover The United Arab Emirates while on the go.</p>
-									</div>
-									<div class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted">
-										<p class="mb-2 card-title-sub text-info fw-normal ls1"><a href="#" class="text-black-50"><i class="icon-arrow-right"></i> Pick your package</a></p>
-									</div>
-								</div>
-							</div>
+                <div class="col-md-4 mb-5">
+                  <div class="card course-card hover-effect border-0">
+                    <a href="#"
+                      ><img
+                        class="card-img-top"
+                        src="demos/course/images/courses/1.jpg"
+                        alt="Card image cap"
+                    /></a>
+                    <div class="card-body">
+                      <h4 class="card-title fw-bold mb-2">STOP OVER</h4>
+                      <p class="card-text text-black-50 mb-1">
+                        Stopover in Dubai or Abu Dhabi and get affordable
+                        packages to discover The United Arab Emirates while on
+                        the go.
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted"
+                    >
+                      <p class="mb-2 card-title-sub text-info fw-normal ls1">
+                        <a href="#" class="text-black-50"
+                          ><i class="icon-arrow-right"></i> Pick your package</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-							<!-- Package 2
+                <!-- Package 2
 							============================================= -->
-							<div class="col-md-4 mb-5">
-								<div class="card course-card hover-effect border-0">
-									<a href="#"><img class="card-img-top" src="demos/course/images/courses/2.jpg" alt="Card image cap"></a>
-									<div class="card-body">
-										<h4 class="card-title fw-bold mb-2">EXPRESS</h4>
-<!-- 
+                <div class="col-md-4 mb-5">
+                  <div class="card course-card hover-effect border-0">
+                    <a href="#"
+                      ><img
+                        class="card-img-top"
+                        src="demos/course/images/courses/2.jpg"
+                        alt="Card image cap"
+                    /></a>
+                    <div class="card-body">
+                      <h4 class="card-title fw-bold mb-2">EXPRESS</h4>
+                      <!-- 
                     <div class="rating-stars mb-2"><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i> <span>4.9</span></div> -->
 
-                    <p class="card-text text-black-50 mb-1">Explore the city, experience interesting tours, and enjoy the desert in a short period while visiting the UAE in an Express package.</p>
-									</div>
-									<div class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted">
-										<p class="mb-2 card-title-sub text-info fw-normal ls1"><a href="#" class="text-black-50"><i class="icon-arrow-right"></i> Pick your package</a></p>
-									</div>
-								</div>
-							</div>
+                      <p class="card-text text-black-50 mb-1">
+                        Explore the city, experience interesting tours, and
+                        enjoy the desert in a short period while visiting the
+                        UAE in an Express package.
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted"
+                    >
+                      <p class="mb-2 card-title-sub text-info fw-normal ls1">
+                        <a href="#" class="text-black-50"
+                          ><i class="icon-arrow-right"></i> Pick your package</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-							<!-- Package 3
+                <!-- Package 3
 							============================================= -->
-							<div class="col-md-4 mb-5">
-								<div class="card course-card hover-effect border-0">
-									<a href="#"><img class="card-img-top" src="demos/course/images/courses/3.jpg" alt="Card image cap"></a>
-									<div class="card-body">
-										<h4 class="card-title fw-bold mb-2">OVERNIGHT IN DUBAI & ABU DHABI</h4>
-										<p class="card-text text-black-50 mb-1">Dubai and Abu Dhabi the 2 pearls of UAE and the must-visit Emirates.<br><br></p>
-									</div>
-									<div class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted">
-										<p class="mb-2 card-title-sub text-info fw-normal ls1"><a href="#" class="text-black-50"><i class="icon-arrow-right"></i> Pick your package</a></p>
-									</div>
-								</div>
-							</div>
+                <div class="col-md-4 mb-5">
+                  <div class="card course-card hover-effect border-0">
+                    <a href="#"
+                      ><img
+                        class="card-img-top"
+                        src="demos/course/images/courses/3.jpg"
+                        alt="Card image cap"
+                    /></a>
+                    <div class="card-body">
+                      <h4 class="card-title fw-bold mb-2">
+                        OVERNIGHT IN DUBAI & ABU DHABI
+                      </h4>
+                      <p class="card-text text-black-50 mb-1">
+                        Dubai and Abu Dhabi the 2 pearls of UAE and the
+                        must-visit Emirates.<br /><br />
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted"
+                    >
+                      <p class="mb-2 card-title-sub text-info fw-normal ls1">
+                        <a href="#" class="text-black-50"
+                          ><i class="icon-arrow-right"></i> Pick your package</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-							<div class="col-md-2 mb-5">
+                <div class="col-md-2 mb-5"></div>
+                <!-- Package 4
+							============================================= -->
+                <div class="col-md-4 mb-5">
+                  <div class="card course-card hover-effect border-0">
+                    <a href="#"
+                      ><img
+                        class="card-img-top"
+                        src="demos/course/images/courses/4.jpg"
+                        alt="Card image cap"
+                    /></a>
+                    <div class="card-body">
+                      <h4 class="card-title fw-bold mb-2">ALL EMIRATES</h4>
+                      <p class="card-text text-black-50 mb-1">
+                        Have a chance to see the seven Emirates and understand
+                        more about the United Arab Emirates and its culture
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted"
+                    >
+                      <p class="mb-2 card-title-sub text-info fw-normal ls1">
+                        <a href="#" class="text-black-50"
+                          ><i class="icon-arrow-right"></i> Pick your package</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Package 5
+							============================================= -->
+                <div class="col-md-4 mb-5">
+                  <div class="card course-card hover-effect border-0">
+                    <a href="#"
+                      ><img
+                        class="card-img-top"
+                        src="demos/course/images/courses/5.jpg"
+                        alt="Card image cap"
+                    /></a>
+                    <div class="card-body">
+                      <h4 class="card-title fw-bold mb-2">EXPO 2020 DUBAI</h4>
+                      <p class="card-text text-black-50 mb-1">
+                        Join the making of the new world and be part of the
+                        first World Expo in the Middle East. ADONIS TOURISM is
+                        an Authorised Reseller by Expo 2020
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted"
+                    >
+                      <p class="mb-2 card-title-sub text-info fw-normal ls1">
+                        <a href="#" class="text-black-50"
+                          ><i class="icon-arrow-right"></i> Pick your package</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Package 6
+							============================================= -->
+                <div class="col-md-2 mb-5"></div>
               </div>
-							<!-- Package 4
-							============================================= -->
-							<div class="col-md-4 mb-5">
-								<div class="card course-card hover-effect border-0">
-									<a href="#"><img class="card-img-top" src="demos/course/images/courses/4.jpg" alt="Card image cap"></a>
-									<div class="card-body">
-										<h4 class="card-title fw-bold mb-2">ALL EMIRATES</h4>
-										<p class="card-text text-black-50 mb-1">Have a chance to see the seven Emirates and understand more about the United Arab Emirates and its culture</p>
-									</div>
-									<div class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted">
-										<p class="mb-2 card-title-sub text-info fw-normal ls1"><a href="#" class="text-black-50"><i class="icon-arrow-right"></i> Pick your package</a></p>
-									</div>
-								</div>
-							</div>
+            </div>
+          </div>
 
-							<!-- Package 5
-							============================================= -->
-							<div class="col-md-4 mb-5">
-								<div class="card course-card hover-effect border-0">
-									<a href="#"><img class="card-img-top" src="demos/course/images/courses/5.jpg" alt="Card image cap"></a>
-									<div class="card-body">
-										<h4 class="card-title fw-bold mb-2">EXPO 2020 DUBAI</h4>
-										<p class="card-text text-black-50 mb-1">Join the making of the new world and be part of the first World Expo in the Middle East. ADONIS TOURISM is an Authorised Reseller by Expo 2020</p>
-									</div>
-									<div class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted">
-										<p class="mb-2 card-title-sub text-info fw-normal ls1"><a href="#" class="text-black-50"><i class="icon-arrow-right"></i> Pick your package</a></p>
-									</div>
-								</div>
-							</div>
-
-							<!-- Package 6
-							============================================= -->
-							<div class="col-md-2 mb-5">
-<!-- 
-								<div class="card course-card hover-effect border-0">
-									<a href="#"><img class="card-img-top" src="demos/course/images/courses/6.jpg" alt="Card image cap"></a>
-									<div class="card-body">
-										<h4 class="card-title fw-bold mb-2"><a href="#">Masterclass: Start Your Food Business 7 courses in 1</a></h4>
-										<p class="mb-2 card-title-sub text-uppercase fw-normal ls1"><a href="#" class="text-black-50">Food Recipes</a></p>
-										<div class="rating-stars mb-2"><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star3"></i><i class="icon-star-half"></i> <span>4.4</span></div>
-										<p class="card-text text-black-50 mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									</div>
-									<div class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted">
-										<div class="badge alert-primary">$21.99</div>
-										<a href="#" class="text-dark position-relative"><i class="icon-line2-user"></i> <span class="author-number">1</span></a>
-									</div>
-								</div>
-                 -->
-							</div>
-						</div>
-					</div>
-        </div>
-
-					<!-- Tour Package - Bottom
+          <!-- Tour Package - Bottom
 					============================================= -->
         </div>
       </section>
@@ -690,383 +931,237 @@
 
       <!-- Footer
 		============================================= -->
-      <footer
-        id="footer"
-        class="border-0"
-        style="padding: 30px 0; background-color: #fff"
-      >
-        <div class="container clearfix">
+      <footer id="footer" class="border-0 bg-white">
+        <div class="container">
           <!-- Footer Widgets
 				============================================= -->
-          <div class="footer-widgets-wrap">
+          <div class="footer-widgets-wrap pb-5 clearfix">
             <div class="row col-mb-50">
-              <div class="col-md-3">
-                <img
-                  src="images/adonis-logo.png"
-                  alt="Image"
-                  height="100"
-                  style="margin-top: 30px"
-                />
-              </div>
+              <div class="col-md-8">
+                <div class="widget clearfix">
+                  <img
+                    src="images/adonis-logo.png"
+                    alt="Footer Logo"
+                    class="alignleft"
+                    style="
+                      margin-top: 8px;
+                      padding-right: 18px;
+                      border-right: 1px solid #ddd;
+                      width: 175px;
+                    "
+                  />
 
-              <div class="col-md-9">
-                <div class="row col-mb-30">
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="widget widget_links widget-li-noicon clearfix">
-                      <h4>Quick Links</h4>
+                  <p>
+                    <br />
+                    Always maintains <strong>a high</strong>,
+                    <strong>quality of</strong>
+                    <strong>service</strong> that meets its standards to
+                    guarantee the maximum tourist satisfaction to enjoy their
+                    vacations or business during their stay in the United Arab
+                    Emirates.
+                  </p>
+
+                  <div class="line line-sm"></div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-6 bottommargin-sm widget_links">
                       <ul>
                         <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                      <ul>
+                        <li><a href="#">Meetings &amp; Events</a></li>
+                        <li><a href="#">Hotel Bookings</a></li>
+                        <li><a href="#">Group Bookings</a></li>
+                        <li><a href="#">Transfers</a></li>
+                        <li><a href="#">Visa Services</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                      <ul>
                         <li><a href="#">Things To Do</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Who We Are</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Dubai Activities</a></li>
+                        <li><a href="#">Abu Dhabi Activities</a></li>
+                        <li><a href="#">Al Ain Activities</a></li>
+                        <li><a href="#">Other Emirates Activities</a></li>
                       </ul>
                     </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="widget widget_links widget-li-noicon clearfix">
-                      <h4>Contact Info</h4>
+
+                    <div class="col-lg-3 col-6 bottommargin-sm widget_links">
                       <ul>
-                        <li>
-                          <a href="#"
-                            ><i class="icon-envelope21"></i>
-                            info@adonistourism.com</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><i class="icon-line-phone"></i> +971 4 255 2925</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><i class="icon-line-map-pin"></i> M05 Bushaqer
-                            Building, Al Garhoud</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><i class="bi-mailbox"></i> P.O. Box: 24617, Dubai.
-                            U.A.E</a
-                          >
-                        </li>
+                        <li><a href="#">Top Tour Packages</a></li>
+                        <li><a href="#">Top Attractions U.A.E</a></li>
+                        <li><a href="#">Top Attractions Oman</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Teams</a></li>
                       </ul>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="widget widget_links widget-li-noicon clearfix">
-                      <h4>Learn</h4>
-                      <ul>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Feedback</a></li>
-                        <li><a href="#">Plugins</a></li>
-                        <li><a href="#">Support Forums</a></li>
-                        <li><a href="#">Themes</a></li>
-                      </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="widget clearfix">
+                  <div class="row clearfix">
+                    <div class="col-12">
+                      <div
+                        class="feature-box fbox-plain fbox-sm align-items-center"
+                      >
+                        <div class="fbox-icon">
+                          <i class="icon-envelope text-dark"></i>
+                        </div>
+                        <div class="fbox-content">
+                          <span class="text-muted">Call Us:</span><br />
+                          <h3 class="nott ls0 fw-semibold">
+                            (+971) 4 255 2925
+                          </h3>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+
+                    <div class="col-12 mt-4">
+                      <div
+                        class="feature-box fbox-plain fbox-sm align-items-center"
+                      >
+                        <div class="fbox-icon">
+                          <i class="icon-phone3 text-dark"></i>
+                        </div>
+                        <div class="fbox-content">
+                          <span class="text-muted">Email Us:</span><br />
+                          <h3 class="nott ls0 fw-semibold">
+                            info@adonistourism.com
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div class="line line-sm"></div>
-
-                <div class="row justify-content-between col-mb-30">
-                  <div class="col-12 col-md-auto text-center text-md-start">
-                    <small class="fw-light" style="color: #aaa"
-                      >Adonis Tourism L.L.C - Dubai, U.A.E | Copyrights &copy;
-                      2022 All Rights Reserved.</small
-                    >
+                <div class="widget subscribe-widget clearfix">
+                  <h5>
+                    <strong>Subscribe</strong> to Our Newsletter to get
+                    Important News, Amazing Offers &amp; Inside Scoops:
+                  </h5>
+                  <div class="widget-subscribe-form-result"></div>
+                  <form
+                    id="widget-subscribe-form"
+                    action="include/subscribe.php"
+                    method="post"
+                    class="mb-0"
+                  >
+                    <div class="input-group mx-auto">
+                      <div class="input-group-text bg-transparent">
+                        <i class="icon-email2"></i>
+                      </div>
+                      <input
+                        type="email"
+                        id="widget-subscribe-form-email"
+                        name="widget-subscribe-form-email"
+                        class="form-control required email"
+                        placeholder="Enter your Email"
+                      />
+                      <button
+                        class="btn btn-success button button-color nott ls0 m-0"
+                        type="submit"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <!-- 
+                <div class="widget">
+                  <div class="row col-mb-30">
+                    <div class="col-lg-6 col-md-12 col-6">
+                      <a
+                        href="https://facebook.com/semicolonweb"
+                        target="_blank"
+                        class="social-icon si-dark si-colored si-facebook mb-0"
+                        style="margin-right: 10px"
+                      >
+                        <i class="icon-facebook"></i>
+                        <i class="icon-facebook"></i>
+                      </a>
+                      <a
+                        href="https://facebook.com/semicolonweb"
+                        target="_blank"
+                        class="text-dark"
+                        ><small style="display: block; margin-top: 3px"
+                          ><strong>Like us</strong><br />on Facebook</small
+                        ></a
+                      >
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-6">
+                      <a
+                        href="https://themeforest.net/user/SemiColonWeb/follow"
+                        target="_blank"
+                        class="social-icon si-dark si-colored si-rss mb-0"
+                        style="margin-right: 10px"
+                      >
+                        <i class="icon-rss"></i>
+                        <i class="icon-rss"></i>
+                      </a>
+                      <a
+                        href="https://themeforest.net/user/SemiColonWeb/follow"
+                        target="_blank"
+                        class="text-dark"
+                        ><small style="display: block; margin-top: 3px"
+                          ><strong>Subscribe</strong><br />to RSS Feeds</small
+                        ></a
+                      >
+                    </div>
                   </div>
+                </div>
+                 -->
+              </div>
+            </div>
+          </div>
+          <!-- .footer-widgets-wrap end -->
+        </div>
 
-                  <div class="col-12 col-md-auto text-center text-md-end">
-                    <a
-                      href="https://www.facebook.com/adonistourismdubai/" target="_blank"
-                      class="social-icon inline-block si-mini si-rounded si-colored si-facebook"
-                    >
-                      <i class="icon-facebook"></i>
-                      <i class="icon-facebook"></i>
-                    </a>
+        <!-- Copyrights
+			============================================= -->
+        <div
+          id="copyrights"
+          style="
+            background: url('demos/seo/images/hero/footer.svg') no-repeat top
+              center;
+            background-size: cover;
+            padding-top: 70px;
+          "
+        >
+          <div class="container clearfix">
+            <div class="row justify-content-between col-mb-30">
+              <div class="col-12 col-lg-auto text-center text-lg-start">
+                Copyrights &copy; 2022 All Rights Reserved by Adonis Tourism
+                L.L.C<br />
+                <div class="copyright-links">
+                  <a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
+                </div>
+              </div>
 
-                    <a
-                      href="https://www.instagram.com/adonistourism/" target="_blank"
-                      class="social-icon inline-block si-mini si-rounded si-colored si-instagram"
-                    >
-                      <i class="icon-instagram"></i>
-                      <i class="icon-instagram"></i>
-                    </a>
-
-                    <a
-                      href="https://twitter.com/adonistourismae" target="_blank"
-                      class="social-icon inline-block si-mini si-rounded si-colored si-twitter"
-                    >
-                      <i class="icon-twitter"></i>
-                      <i class="icon-twitter"></i>
-                    </a>
-
-                    <a
-                      href="https://www.youtube.com/channel/UC8AmUWOJGsda2guG4a_K6Fg" target="_blank"
-                      class="social-icon inline-block si-mini si-rounded si-colored si-youtube"
-                    >
-                      <i class="icon-youtube"></i>
-                      <i class="icon-youtube"></i>
-                    </a>
-
-                  </div>
+              <div class="col-12 col-lg-auto text-center text-lg-end">
+                <div class="copyrights-menu copyright-links clearfix">
+                  <a href="#">Home</a>/<a href="#">About Us</a>/<a href="#"
+                    >Team</a
+                  >/<a href="#">Clients</a>/<a href="#">FAQs</a>/<a href="#"
+                    >Contact</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- #copyrights end -->
       </footer>
       <!-- #footer end -->
-
-		<!-- Footer
-		============================================= -->
-		<footer id="footer" class="dark">
-			<div class="container">
-
-				<!-- Footer Widgets
-				============================================= -->
-				<div class="footer-widgets-wrap">
-
-					<div class="row col-mb-50">
-						<div class="col-lg-8">
-
-							<div class="row col-mb-50">
-								<div class="col-md-4">
-
-									<div class="widget clearfix">
-
-										<img src="images/adonis-logo.png" alt="Image" class="footer-logo">
-
-										<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
-
-										<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
-											<address>
-												<strong>Headquarters:</strong><br>
-												795 Folsom Ave, Suite 600<br>
-												San Francisco, CA 94107<br>
-											</address>
-											<abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>
-											<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br>
-											<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
-										</div>
-
-									</div>
-
-								</div>
-
-								<div class="col-md-4">
-
-									<div class="widget widget_links clearfix">
-
-										<h4>Blogroll</h4>
-
-										<ul>
-											<li><a href="https://codex.wordpress.org/">Documentation</a></li>
-											<li><a href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
-											<li><a href="https://wordpress.org/extend/plugins/">Plugins</a></li>
-											<li><a href="https://wordpress.org/support/">Support Forums</a></li>
-											<li><a href="https://wordpress.org/extend/themes/">Themes</a></li>
-											<li><a href="https://wordpress.org/news/">Canvas Blog</a></li>
-											<li><a href="https://planet.wordpress.org/">Canvas Planet</a></li>
-										</ul>
-
-									</div>
-
-								</div>
-
-								<div class="col-md-4">
-
-									<div class="widget clearfix">
-										<h4>Recent Posts</h4>
-
-										<div class="posts-sm row col-mb-30" id="post-list-footer">
-											<div class="entry col-12">
-												<div class="grid-inner row">
-													<div class="col">
-														<div class="entry-title">
-															<h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
-														</div>
-														<div class="entry-meta">
-															<ul>
-																<li>10th July 2021</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="entry col-12">
-												<div class="grid-inner row">
-													<div class="col">
-														<div class="entry-title">
-															<h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>
-														</div>
-														<div class="entry-meta">
-															<ul>
-																<li>10th July 2021</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="entry col-12">
-												<div class="grid-inner row">
-													<div class="col">
-														<div class="entry-title">
-															<h4><a href="#">Debitis nihil placeat, illum est nisi</a></h4>
-														</div>
-														<div class="entry-meta">
-															<ul>
-																<li>10th July 2021</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-lg-4">
-
-							<div class="row col-mb-50">
-								<div class="col-md-4 col-lg-12">
-									<div class="widget clearfix" style="margin-bottom: -20px;">
-
-										<div class="row">
-											<div class="col-lg-6 bottommargin-sm">
-												<div class="counter counter-small"><span data-from="50" data-to="15065421" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
-												<h5 class="mb-0">Total Downloads</h5>
-											</div>
-
-											<div class="col-lg-6 bottommargin-sm">
-												<div class="counter counter-small"><span data-from="100" data-to="18465" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
-												<h5 class="mb-0">Clients</h5>
-											</div>
-										</div>
-
-									</div>
-								</div>
-
-								<div class="col-md-5 col-lg-12">
-									<div class="widget subscribe-widget clearfix">
-										<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
-										<div class="widget-subscribe-form-result"></div>
-										<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
-											<div class="input-group mx-auto">
-												<div class="input-group-text"><i class="icon-email2"></i></div>
-												<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
-												<button class="btn btn-success" type="submit">Subscribe</button>
-											</div>
-										</form>
-									</div>
-								</div>
-
-								<div class="col-md-3 col-lg-12">
-									<div class="widget clearfix" style="margin-bottom: -20px;">
-
-										<div class="row">
-											<div class="col-6 col-md-12 col-lg-6 clearfix bottommargin-sm">
-												<a href="#" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
-													<i class="icon-facebook"></i>
-													<i class="icon-facebook"></i>
-												</a>
-												<a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
-											</div>
-											<div class="col-6 col-md-12 col-lg-6 clearfix">
-												<a href="#" class="social-icon si-dark si-colored si-rss mb-0" style="margin-right: 10px;">
-													<i class="icon-rss"></i>
-													<i class="icon-rss"></i>
-												</a>
-												<a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
-											</div>
-										</div>
-
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-
-				</div><!-- .footer-widgets-wrap end -->
-
-			</div>
-
-			<!-- Copyrights
-			============================================= -->
-			<div id="copyrights">
-				<div class="container">
-
-					<div class="row col-mb-30">
-
-						<div class="col-md-6 text-center text-md-start">
-							Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br>
-							<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
-						</div>
-
-						<div class="col-md-6 text-center text-md-end">
-							<div class="d-flex justify-content-center justify-content-md-end">
-								<a href="#" class="social-icon si-small si-borderless si-facebook">
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-gplus">
-									<i class="icon-gplus"></i>
-									<i class="icon-gplus"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-pinterest">
-									<i class="icon-pinterest"></i>
-									<i class="icon-pinterest"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-vimeo">
-									<i class="icon-vimeo"></i>
-									<i class="icon-vimeo"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-github">
-									<i class="icon-github"></i>
-									<i class="icon-github"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-yahoo">
-									<i class="icon-yahoo"></i>
-									<i class="icon-yahoo"></i>
-								</a>
-
-								<a href="#" class="social-icon si-small si-borderless si-linkedin">
-									<i class="icon-linkedin"></i>
-									<i class="icon-linkedin"></i>
-								</a>
-							</div>
-
-							<div class="clear"></div>
-
-							<i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +1-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> CanvasOnSkype
-						</div>
-
-					</div>
-
-				</div>
-			</div><!-- #copyrights end -->
-		</footer><!-- #footer end -->
-      
     </div>
     <!-- #wrapper end -->
 
