@@ -53,38 +53,18 @@
     <!-- Here goes your colors.css
     ============================================= -->
     <link rel="stylesheet" href="css/colors.css" type="text/css" />
-    <!-- Range Slider CSS -->
-    <link
-      rel="stylesheet"
-      href="css/components/ion.rangeslider.css"
-      type="text/css"
-    />
 
     <!-- Theme Color
 	============================================= -->
     <link rel="stylesheet" href="css/colors.php?color=00BED7" type="text/css" />
+
     <!-- Document Title
 	============================================= -->
     <link rel="icon" type="image/x-icon" href="/images/adonis-favicon.png" />
     <title>Adonis Tourism LLC | You Travel, We Care</title>
-    <style>
-      .form-group > label.error {
-        display: block !important;
-        text-transform: none;
-      }
-
-      .form-group input.valid ~ label.error,
-      .form-group input[type="text"] ~ label.error,
-      .form-group input[type="email"] ~ label.error,
-      .form-group input[type="number"] ~ label.error,
-      .form-group select ~ label.error,
-      .form-group textarea ~ label.error {
-        display: none !important;
-      }
-    </style>
   </head>
 
-  <body class="stretched block-form-2">
+  <body class="stretched">
     <!-- Document Wrapper
 	============================================= -->
     <div id="wrapper" class="clearfix">
@@ -264,15 +244,8 @@
 		============================================= -->
       <section id="page-title">
         <div class="container clearfix">
-          <h1>Meetings &amp; Events</h1>
-          <span>Inquiry Forms</span>
-          <!-- <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Widgets</a></li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Event Registration Form
-            </li>
-          </ol> -->
+          <h1>Top Attractions in U.A.E</h1>
+          <span>Explore Top Attractions in United Arab Emirates</span>
         </div>
       </section>
       <!-- #page-title end -->
@@ -282,334 +255,339 @@
       <section id="content">
         <div class="content-wrap">
           <div class="container clearfix">
-            <div class="form-widget">
-              <div class="form-result"></div>
-
-              <div class="row">
-                <div class="col-lg-12">
-                  <form
-                    class="row"
-                    id="event-registration"
-                    action="include/form.php"
-                    method="post"
-                    enctype="multipart/form-data"
-                  >
-                    <div class="form-process">
-                      <div class="css3-spinner">
-                        <div class="css3-spinner-scaler"></div>
-                      </div>
-                    </div>
-                    <div class="col-6 form-group bottommargin-sm">
-                      <label>Company Name:</label>
-                      <input
-                        type="text"
-                        name="event-registration-company-name"
-                        id="event-registration-company-name"
-                        class="form-control required"
-                        value=""
-                        placeholder="Enter Company Name"
-                      />
-                    </div>
-                    <div class="col-6 form-group">
-                      <label>Phone:</label>
-                      <input
-                        type="number"
-                        name="event-registration-number"
-                        id="event-registration-number"
-                        class="form-control required"
-                        value=""
-                        placeholder="Enter Phone Number"
-                      />
-                    </div>
-                    <div class="col-6 form-group bottommargin-sm">
-                      <label>First Name:</label>
-                      <input
-                        type="text"
-                        name="event-registration-first-name"
-                        id="event-registration-first-name"
-                        class="form-control required"
-                        value=""
-                        placeholder="Enter your First Name"
-                      />
-                    </div>
-                    <div class="col-6 form-group">
-                      <label>Last Name:</label>
-                      <input
-                        type="text"
-                        name="event-registration-last-name"
-                        id="event-registration-last-name"
-                        class="form-control required"
-                        value=""
-                        placeholder="Enter your Last Name"
-                      />
-                    </div>
-                    <div class="col-6 form-group bottommargin-sm">
-                      <label>Agent Reference No:</label>
-                      <input
-                        type="email"
-                        name="event-registration-agent-number"
-                        id="event-registration-agent-number"
-                        class="form-control required"
-                        value=""
-                        placeholder="Enter Agent Reference Number"
-                      />
-                    </div>
-                    <div class="col-6 form-group">
-                      <label>Email:</label>
-                      <input
-                        type="email"
-                        name="event-registration-email"
-                        id="event-registration-email"
-                        class="form-control required"
-                        value=""
-                        placeholder="Enter your Email Address"
-                      />
-                    </div>
-                    <div class="col-6 form-group">
-                      <label
-                        for="template-contactform-pax"
-                        class="mb-3 clearfix"
-                        >Select No. of Pax:</label
+            <!-- Posts
+					============================================= -->
+            <div
+              id="posts"
+              class="post-grid row grid-container gutter-40 clearfix"
+              data-layout="fitRows"
+            >
+              <!-- Sharjah Museum of Islamic Civilization   -->
+              <div class="entry col-md-4 col-sm-6 col-12">
+                <div class="grid-inner">
+                  <div class="entry-image">
+                    <a href="images/blog/full/1.jpg" data-lightbox="image"
+                      ><img
+                        src="images/blog/grid/1.jpg"
+                        alt="Standard Post with Image"
+                    /></a>
+                  </div>
+                  <div class="entry-title">
+                    <h2>
+                      <a
+                        href="top-attractions/sharjah-islamic-civilization.html"
+                        >Sharjah Museum of Islamic Civilization</a
                       >
-                      <input
-                        id="template-contactform-pax"
-                        name="template-contactform-pax"
-                        class="range_01 input-range-slider"
-                      />
-                    </div>
-                    <div class="col-6 form-group">
-                      <label>Guest Nationality:</label>
-                      <input
-                        type="text"
-                        name="event-registration-guest-nationality"
-                        id="event-registration-guest-nationality"
-                        class="form-control required"
-                        value=""
-                        placeholder="Enter Guest Nationality"
-                      />
-                    </div>
-                    <div class="col-6 form-group">
-                      <label>Gender:</label><br />
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input required"
-                          type="radio"
-                          name="event-registration-gender"
-                          id="event-registration-gender-male"
-                          value="Male"
-                        />
-                        <label
-                          class="form-check-label nott"
-                          for="event-registration-gender-male"
-                          >Male</label
+                    </h2>
+                  </div>
+                  <div class="entry-meta">
+                    <ul>
+                      <li><i class="icon-calendar3"></i> 10th Feb 2021</li>
+                      <li>
+                        <a href="coming-soon.html#comments"
+                          ><i class="icon-comments"></i> 13</a
                         >
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="event-registration-gender"
-                          id="event-registration-gender-female"
-                          value="Female"
-                        />
-                        <label
-                          class="form-check-label nott"
-                          for="event-registration-gender-female"
-                          >Female</label
-                        >
-                      </div>
-                    </div>
-                    <div class="col-6 form-group">
-                      <label>Interests</label>
-                      <select
-                        class="form-select required"
-                        name="event-registration-interests"
-                        id="event-registration-interests"
-                      >
-                        <option value="">-- Select One --</option>
-                        <option value="UX Design">UX Design</option>
-                        <option value="Backend Development">
-                          Backend Development
-                        </option>
-                        <option value="Videography">Videography</option>
-                        <option value="VFX Animations">VFX Animations</option>
-                        <option value="Others">Others</option>
-                      </select>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label>Website:</label>
-                        <input
-                          type="text"
-                          name="event-registration-website"
-                          id="event-registration-website"
-                          class="form-control required url"
-                          value="https://"
-                          placeholder="Enter your Website Address"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label>Bio:</label>
-                        <textarea
-                          name="event-registration-bio"
-                          id="event-registration-bio"
-                          class="form-control required"
-                          cols="30"
-                          rows="5"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="col-6 form-group">
-                      <label>Social Media Handles:</label>
-                      <div class="input-group">
-                        <span class="input-group-text">Twitter</span>
-                        <input
-                          type="text"
-                          name="event-registration-twitter"
-                          id="event-registration-twitter"
-                          class="form-control"
-                          value=""
-                          placeholder="@username"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-6 form-group">
-                      <label for="">&nbsp;</label>
-                      <div class="input-group">
-                        <span class="input-group-text">Github</span>
-                        <input
-                          type="text"
-                          name="event-registration-github"
-                          id="event-registration-github"
-                          class="form-control"
-                          value=""
-                          placeholder="@username"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label>Event Passes</label>
-                        <select
-                          class="form-select required"
-                          name="event-registration-passes"
-                          id="event-registration-passes"
-                        >
-                          <option value="">-- Select One --</option>
-                          <option value="Contributors Day + Main Event">
-                            Contributors Day + Main Event
-                          </option>
-                          <option value="Main Event only">
-                            Main Event only
-                          </option>
-                          <option value="VIP Access">
-                            All Days + VIP Access to Insiders Club
-                          </option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label>How did you hear about the Event?</label>
-                        <select
-                          class="form-select required"
-                          name="event-registration-know-us"
-                          id="event-registration-know-us"
-                        >
-                          <option value="">-- Select One --</option>
-                          <option value="Google">Google</option>
-                          <option value="Social Media">Social Media</option>
-                          <option value="Friends">Friends</option>
-                          <option value="Advertisement">Advertisement</option>
-                          <option value="Others">Others</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-12 d-none">
-                      <input
-                        type="text"
-                        id="event-registration-botcheck"
-                        name="event-registration-botcheck"
-                        value=""
-                      />
-                    </div>
-                    <div class="col-12">
-                      <button
-                        type="submit"
-                        name="event-registration-submit"
-                        class="btn btn-secondary"
-                      >
-                        Register
-                      </button>
-                    </div>
-
-                    <input
-                      type="hidden"
-                      name="prefix"
-                      value="event-registration-"
-                    />
-                  </form>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-camera-retro"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="entry-content">
+                    <p>
+                      The Islamic Museum was first inaugurated in the Heritage
+                      Area on the sixth of November 1996. This museum was then
+                      transformed, under the directions of His Highness Sheikh
+                      Dr. Sultan bin Muhammad Al Qasimi, Supreme Council Member
+                      and Ruler of Sharjah, to the traditional Souq Al Majarrah
+                      (opened as a souq in 1987).
+                    </p>
+                    <a
+                      href="top-attractions/sharjah-islamic-civilization.html"
+                      class="more-link"
+                      >Read More</a
+                    >
+                  </div>
                 </div>
-                <!-- 
-                <div class="col-lg-6 ps-lg-4">
-                  <p>
-                    <span class="dropcap">F</span>oster best practices
-                    effectiveness inspire breakthroughs solve immunize turmoil.
-                    Policy dialogue peaceful The Elders rural global support.
-                    Process inclusive innovate readiness, public sector
-                    complexity. Lifting people up cornerstone partner,
-                    technology working families civic engagement activist
-                    recognize potential global network. Countries tackling
-                    solution respond change-makers tackle. Assistance, giving;
-                    fight against malnutrition experience in the field lasting
-                    change scalable. Empowerment long-term, fairness policy
-                    community progress social responsibility; Cesar Chavez
-                    recognition. Expanding community ownership visionary
-                    indicator pursue these aspirations accessibility. Achieve;
-                    worldwide, life-saving initiative facilitate. New
-                    approaches, John Lennon humanitarian relief fundraise
-                    vaccine Jane Jacobs community health workers Oxfam. Our
-                    ambitions informal economies.
-                  </p>
+              </div>
 
-                  <blockquote class="topmargin bottommargin">
-                    <p>
-                      Human rights healthcare immunize; advancement grantees.
-                      Medical supplies; meaningful, truth technology catalytic
-                      effect. Promising development capacity building
-                      international enable poverty.
-                    </p>
-                  </blockquote>
+              <!-- The Flag Island -->
+              <div class="entry col-md-4 col-sm-6 col-12">
+                <div class="grid-inner">
+                  <div class="entry-image">
+                    <a href="images/blog/full/2.jpg" data-lightbox="image"
+                      ><img
+                        src="images/blog/grid/2.jpg"
+                        alt="Standard Post with Image"
+                    /></a>
 
-                  <div class="w-100">
-                    <p>
-                      Provide, Aga Khan, interconnectivity governance fairness
-                      replicable, new approaches visionary implementation. End
-                      hunger evolution, future promising development youth.
-                      Public sector, small-scale farmers; harness facilitate
-                      gender. Contribution dedicated global change movements,
-                      prosperity accelerate progress citizens of change.
-                      Elevate; accelerate reduce child mortality; billionaire
-                      philanthropy fluctuation, plumpy'nut care opportunity
-                      catalyze. Partner deep.
-                    </p>
+                    <!-- <iframe
+                      src="https://player.vimeo.com/video/87701971"
+                      width="500"
+                      height="281"
+                      allow="autoplay; fullscreen"
+                      allowfullscreen
+                    ></iframe> -->
                   </div>
-
-                  <div class="w-100">
-                    <p>
-                      Frontline harness criteria governance freedom
-                      contribution. Campaign Angelina Jolie natural resources,
-                      Rockefeller peaceful philanthropy human potential.
-                      Justice; outcomes reduce carbon emissions nonviolent
-                      resistance human being. Solve innovate aid communities;
-                      benefit truth rural development UNICEF meaningful work.
-                      Generosity Action Against Hunger relief; many voices
-                      impact crisis situation poverty pride. Vaccine carbon.
-                    </p>
+                  <div class="entry-title">
+                    <h2>
+                      <a href="coming-soon.html">The Flag Island</a>
+                    </h2>
                   </div>
-                </div> -->
+                  <div class="entry-meta">
+                    <ul>
+                      <li><i class="icon-calendar3"></i> 16th Feb 2021</li>
+                      <li>
+                        <a href="coming-soon.html#comments"
+                          ><i class="icon-comments"></i> 19</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-film"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="entry-content">
+                    <p>
+                      The Flag Island is located near the Government Departments
+                      Buildings in Al Layyah next to Al Jubail Market. The
+                      flagpole at the Flag Island was the 7th tallest in the
+                      world at the opening date on 2nd of December 2012 and
+                      crowned with 15 x 30 metres flag. The lighting of the pole
+                      and its surroundings is characterised by a unique...
+                    </p>
+                    <a href="coming-soon.html" class="more-link">Read More</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sheikh Zayed Grand Mosque -->
+              <div class="entry col-md-4 col-sm-6 col-12">
+                <div class="grid-inner">
+                  <div class="entry-image">
+                    <div
+                      class="fslider"
+                      data-arrows="false"
+                      data-lightbox="gallery"
+                    >
+                      <div class="flexslider">
+                        <div class="slider-wrap">
+                          <div class="slide">
+                            <a
+                              href="images/blog/full/3.jpg"
+                              data-lightbox="gallery-item"
+                              ><img
+                                src="images/blog/grid/3.jpg"
+                                alt="Standard Post with Gallery"
+                            /></a>
+                          </div>
+                          <div class="slide">
+                            <a
+                              href="images/blog/full/3.1.jpg"
+                              data-lightbox="gallery-item"
+                              ><img
+                                src="images/blog/grid/3.1.jpg"
+                                alt="Standard Post with Gallery"
+                            /></a>
+                          </div>
+                          <div class="slide">
+                            <a
+                              href="images/blog/full/3.2.jpg"
+                              data-lightbox="gallery-item"
+                              ><img
+                                src="images/blog/grid/3.2.jpg"
+                                alt="Standard Post with Gallery"
+                            /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="entry-title">
+                    <h2>
+                      <a href="coming-soon.html">Sheikh Zayed Grand Mosque</a>
+                    </h2>
+                  </div>
+                  <div class="entry-meta">
+                    <ul>
+                      <li><i class="icon-calendar3"></i> 24th Feb 2021</li>
+                      <li>
+                        <a href="coming-soon.html#comments"
+                          ><i class="icon-comments"></i> 21</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-picture"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="entry-content">
+                    <p>
+                      The impressive and inspiring Sheikh Zayed Grand Mosque is
+                      one of the world’s largest mosques and the only one that
+                      captures the unique interactions between Islam and other
+                      world cultures. Sheikh Zayed bin Sultan Al Nahyan, the
+                      Founder of the UAE, had a very specific vision for this
+                      mosque: to incorporate architectural styles from...
+                    </p>
+                    <a href="coming-soon.html" class="more-link">Read More</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- The Palm Jumeirah   -->
+              <div class="entry col-md-4 col-sm-6 col-12">
+                <div class="grid-inner">
+                  <div class="entry-image">
+                    <a href="images/blog/full/4.jpg" data-lightbox="image"
+                      ><img
+                        src="images/blog/grid/4.jpg"
+                        alt="Standard Post with Image"
+                    /></a>
+                  </div>
+                  <div class="entry-title">
+                    <h2>
+                      <a
+                        href="top-attractions/sharjah-islamic-civilization.html"
+                        >The Palm Jumeirah</a
+                      >
+                    </h2>
+                  </div>
+                  <div class="entry-meta">
+                    <ul>
+                      <li><i class="icon-calendar3"></i> 10th Feb 2021</li>
+                      <li>
+                        <a href="coming-soon.html#comments"
+                          ><i class="icon-comments"></i> 13</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-camera-retro"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="entry-content">
+                    <p>
+                      Dubai is globally recognized for its world firsts, and The
+                      Palm Jumeirah is an impressive example. Viewed from above,
+                      the manmade island resembles a stylized palm tree, which
+                      was built from the reclaimed land mass and a series of
+                      artificial archipelagos. Palm Jumeirah is home to some of
+                      Dubai's most luxurious resorts...
+                    </p>
+                    <a
+                      href="top-attractions/sharjah-islamic-civilization.html"
+                      class="more-link"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Burj Al Arab   -->
+              <div class="entry col-md-4 col-sm-6 col-12">
+                <div class="grid-inner">
+                  <div class="entry-image">
+                    <a href="images/blog/full/5.jpg" data-lightbox="image"
+                      ><img
+                        src="images/blog/grid/5.jpg"
+                        alt="Standard Post with Image"
+                    /></a>
+                  </div>
+                  <div class="entry-title">
+                    <h2>
+                      <a
+                        href="top-attractions/sharjah-islamic-civilization.html"
+                        >Burj Al Arab</a
+                      >
+                    </h2>
+                  </div>
+                  <div class="entry-meta">
+                    <ul>
+                      <li><i class="icon-calendar3"></i> 10th Feb 2021</li>
+                      <li>
+                        <a href="coming-soon.html#comments"
+                          ><i class="icon-comments"></i> 13</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-camera-retro"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="entry-content">
+                    <p>
+                      Set on an island in a striking sail-shaped building, this
+                      luxury hotel is a 5-minute walk from Wild Wadi Water Park
+                      and 4 km from Mall of the Emirates. Opulent suites feature
+                      floor-to-ceiling windows with gulf or city views. All have
+                      24-carat gold iPads, free Wi-Fi, flat-screen TVs and
+                      iPods. They offer Egyptian linens, designer toiletries...
+                    </p>
+                    <a
+                      href="top-attractions/sharjah-islamic-civilization.html"
+                      class="more-link"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Louvre Abu Dhabi   -->
+              <div class="entry col-md-4 col-sm-6 col-12">
+                <div class="grid-inner">
+                  <div class="entry-image">
+                    <a href="images/blog/full/6.jpg" data-lightbox="image"
+                      ><img
+                        src="images/blog/grid/6.jpg"
+                        alt="Standard Post with Image"
+                    /></a>
+                  </div>
+                  <div class="entry-title">
+                    <h2>
+                      <a href="coming-soon.html">Louvre Abu Dhabi</a>
+                    </h2>
+                  </div>
+                  <div class="entry-meta">
+                    <ul>
+                      <li><i class="icon-calendar3"></i> 10th Feb 2021</li>
+                      <li>
+                        <a href="coming-soon.html#comments"
+                          ><i class="icon-comments"></i> 13</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-camera-retro"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="entry-content">
+                    <p>
+                      The Louvre Abu Dhabi is an art and civilization museum,
+                      located in Abu Dhabi, United Arab Emirates. The museum is
+                      located on the Saadiyat Island Cultural District. It is
+                      approximately 24,000 square metres in size, with 8,000
+                      square metres of galleries, making it the largest art
+                      museum in the Arabian peninsula.
+                    </p>
+                    <a href="coming-soon.html" class="more-link">Read More</a>
+                  </div>
+                </div>
               </div>
             </div>
+            <!-- #posts end -->
+
+            <!-- <div class="clear mt-5"></div> -->
+
+            <!-- Pagination
+					============================================= -->
+
+            <!-- <div class="d-flex justify-content-between mt-5">
+              <a href="#" class="btn btn-outline-secondary">&larr; Older</a>
+              <a href="#" class="btn btn-outline-dark">Newer &rarr;</a>
+            </div> -->
+
+            <!-- .pager end -->
           </div>
         </div>
       </section>
@@ -863,8 +841,6 @@
     <!-- Footer Scripts
 	============================================= -->
     <script src="js/functions.js"></script>
-    <!-- Range Slider Plugin -->
-    <script src="js/components/rangeslider.min.js"></script>
 
     <script>
       jQuery(window).on("pluginCarouselReady", function () {
@@ -881,38 +857,6 @@
           responsive: {
             768: { items: 2 },
             1200: { stagePadding: 200 },
-          },
-        });
-      });
-    </script>
-
-    <script>
-      jQuery(document).ready(function () {
-        jQuery(".range_01").ionRangeSlider({
-          grid: true,
-          min: 1,
-          max: 100,
-          from: 1,
-          prefix: "Pax ",
-          max_postfix: "+",
-        });
-
-        jQuery(".select-tags").select2({
-          tags: true,
-          placeholder: "Add Values and Press Enter",
-        });
-
-        jQuery(".datetimepicker1").datetimepicker();
-
-        jQuery(".selectsplitter").selectsplitter();
-
-        tinymce.init({
-          selector: ".textarea-message",
-          menubar: false,
-          setup: function (editor) {
-            editor.on("change", function (e) {
-              editor.save();
-            });
           },
         });
       });
