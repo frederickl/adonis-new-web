@@ -59,108 +59,112 @@
     <link rel="stylesheet" href="css/colors.php?color=00BED7" type="text/css" />
 
     <style>
-          .block-expand-categories h1,
-          .block-expand-categories h2,
-          .block-expand-categories h3 {
-            font-family: Playfair Display, serif !important;
-          }
+      .block-expand-categories h1,
+      .block-expand-categories h2,
+      .block-expand-categories h3 {
+        font-family: Playfair Display, serif !important;
+      }
 
-          .block-expand-categories .expand-category {
-            --height: 50vh;
-            --responsive-height: 60px;
-            --hover-flex: 10;
+      .block-expand-categories .expand-category {
+        --height: 50vh;
+        --responsive-height: 60px;
+        --hover-flex: 10;
 
-            position: relative;
-            background-position: center center;
-            background-size: cover;
-            border-radius: 20px;
-            margin: 10px 0;
-            min-height: var(--responsive-height);
-            cursor: pointer;
-          }
+        position: relative;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 20px;
+        margin: 10px 0;
+        min-height: var(--responsive-height);
+        cursor: pointer;
+      }
 
-          .block-expand-categories .expand-category h4 {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            text-align: center;
-            margin: 0;
-            transform: translateY(-50%);
-          }
+      .block-expand-categories .expand-category h4 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: 0;
+        transform: translateY(-50%);
+      }
 
-          /* Larger Device */
-          @media (min-width: 992px) {
-            .block-expand-categories .expand-category {
-              height: var(--height);
-              flex: 1;
-              margin: 0 10px;
-              transition: flex 1s ease;
-              -webkit-backface-visibility: hidden;
-              transform: translate3d(0, 0, 0);
-            }
+      /* Larger Device */
+      @media (min-width: 992px) {
+        .block-expand-categories .expand-category {
+          height: var(--height);
+          flex: 1;
+          margin: 0 10px;
+          transition: flex 1s ease;
+          -webkit-backface-visibility: hidden;
+          transform: translate3d(0, 0, 0);
+        }
 
-            .block-expand-categories:not(.on-click) .expand-category:hover,
-            .block-expand-categories.on-click .expand-category.active {
-              flex: var(--hover-flex);
-            }
+        .block-expand-categories:not(.on-click) .expand-category:hover,
+        .block-expand-categories.on-click .expand-category.active {
+          flex: var(--hover-flex);
+        }
 
-            .block-expand-categories .expand-category h4 {
-              opacity: 1;
-              top: auto;
-              bottom: 10px;
-              transform: none;
-              transition: opacity 0.4s ease;
-            }
+        .block-expand-categories .expand-category h4 {
+          opacity: 1;
+          top: auto;
+          bottom: 10px;
+          transform: none;
+          transition: opacity 0.4s ease;
+        }
 
-            .block-expand-categories:hover
-              .expand-category:not(.active):not(:hover)
-              h4,
-            .block-expand-categories.on-click .expand-category:not(.active) h4 {
-              opacity: 0;
-            }
-          }
+        .block-expand-categories:hover
+          .expand-category:not(.active):not(:hover)
+          h4,
+        .block-expand-categories.on-click .expand-category:not(.active) h4 {
+          opacity: 0;
+        }
+      }
 
       .play-icon {
-      	position: relative;
-      	display: block;
-      	font-size: 28px;
-      	width: 60px;
-      	height: 60px;
-      	line-height: 62px;
-      	left: 50%;
-      	margin-left: -30px;
-      	border-radius: 50%;
-      	color: #FFF !important;
-      	background-color: #dc143c;
-      	-webkit-transition: transform .3s ease;
-      	-o-transition: transform .3s ease;
-      	transition: transform .3s ease;
+        position: relative;
+        display: block;
+        font-size: 28px;
+        width: 60px;
+        height: 60px;
+        line-height: 62px;
+        left: 50%;
+        margin-left: -30px;
+        border-radius: 50%;
+        color: #fff !important;
+        background-color: #dc143c;
+        -webkit-transition: transform 0.3s ease;
+        -o-transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
       }
 
       .play-icon i {
-      	position: relative;
-      	left: 4px;"
+        position: relative;
+        left: 4px;
       }
 
       .play-icon:hover {
-      	-webkit-transform: scale(1.15);
-      	-ms-transform: scale(1.15);
-      	-o-transform: scale(1.15);
-      	transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
+        transform: scale(1.15);
       }
 
       body.device-xl .onepage-outdoor-negetive,
-      body.device-lg .onepage-outdoor-negetive { margin-top: -300px; }
+      body.device-lg .onepage-outdoor-negetive {
+        margin-top: -300px;
+      }
 
       @media (min-width: 768px) {
-      	#slider h2 { font-size: 52px; }
+        #slider h2 {
+          font-size: 52px;
+        }
 
-      	.text-overlay-title h3 {
-      		font-size: 22px;
-      		letter-spacing: 1px;
-      		font-weight: 600;
-      	}
+        .text-overlay-title h3 {
+          font-size: 22px;
+          letter-spacing: 1px;
+          font-weight: 600;
+        }
       }
     </style>
 
